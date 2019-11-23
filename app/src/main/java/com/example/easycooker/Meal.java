@@ -3,6 +3,7 @@ package com.example.easycooker;
 import java.util.ArrayList;
 
 public class Meal {
+    private String id;
     private String title;
     private String image_url;
     private int missing_ingredients_count;
@@ -10,8 +11,9 @@ public class Meal {
     private ArrayList<String> missing_ingredients;
     private String instructions;
 
-    public Meal(String title, String image_url, int missing_ingredients_count, int used_ingredients_count, ArrayList<String> missing_ingredients) {
+    public Meal(String id,String title, String image_url, int missing_ingredients_count, int used_ingredients_count, ArrayList<String> missing_ingredients) {
         this.title = title;
+        this.id=id;
         this.image_url = image_url;
         this.missing_ingredients_count = missing_ingredients_count;
         this.used_ingredients_count = used_ingredients_count;

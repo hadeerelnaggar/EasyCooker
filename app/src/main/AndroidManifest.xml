@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Meals_Details"></activity>
+        <activity android:name=".Meals_Details"/>
         <activity android:name=".List_of_meals" />
         <activity android:name=".Select_ingredients">
             <intent-filter>

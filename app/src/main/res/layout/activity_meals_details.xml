@@ -1,21 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Meals_Details"
-    android:orientation="vertical">
-    <ImageView
+    android:verticalScrollbarPosition="right">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/mealname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:textSize="25sp"
+        android:text="@+string/hakona mattata"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:paddingBottom="15dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/meal_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/back"
+        android:contentDescription="@string/image">
     </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/order_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="order missing ingredients"
+                android:layout_gravity="center">
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/missing_ingredients"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:id="@+id/missingingredientstextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@+string/tomato,pasta,shrimps">
+            </TextView>
+        </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:text="Instructions"
+        android:textStyle="bold"
+        android:textSize="20sp">
     </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/mealinstruction"
+        android:text="@+string/1)jnkdsmlwdl,xlsd \n 2)njfdksm \n"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    </TextView>
+    </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>

@@ -100,7 +100,7 @@ public class ConnectAPiToGetMeals {
                         JSONObject objj = arrofmissedingredients.getJSONObject(j);
                         missedingredients.add(objj.getString("name"));
                     }
-                    meal = new Meal(id, mealname, imagesource, missedingredientscount, usedingredientscount, missedingredients);
+                    meal = new Meal(id,mealname, imagesource, missedingredientscount, usedingredientscount, missedingredients);
                     String url2 = "https://api.spoonacular.com/recipes/" + id + "/analyzedInstructions?apiKey=28c107bdfb18450fa22d1b45c885d5e0";
                     GetRecipeInstructions instruction = new GetRecipeInstructions();
                     instruction.onPostExecute(instruction.doInBackground(url2));
