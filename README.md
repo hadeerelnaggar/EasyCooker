@@ -10,5 +10,5 @@ Easy cooker is an android app that allows user to search for meals using the ing
    virtual android emulator or an android phone connected to your computer,
    internet connection.
 # Used technologies
-  1- I used the spoonacular API to search for meals by ingredients, used asynTask to run this api
-  2- ExpandableListView and RecyclerView for the lists
+  1- I used the spoonacular API to search for meals by ingredients, used asynTask to run this api.
+  2- ExpandableListView and RecyclerView for the lists.
