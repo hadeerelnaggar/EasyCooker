@@ -1,5 +1,5 @@
 # EasyCooker
-easy cooker is an android app that allows user to search for meals using the ingredients they have
+Easy cooker is an android app that allows user to search for meals using the ingredients they have
  from the select ingredients list.
    after that a list of meals appears, you can choose any meal from this list to view its details.
    you can also choose a random meal of the day.
@@ -10,6 +10,5 @@ easy cooker is an android app that allows user to search for meals using the ing
    virtual android emulator or an android phone connected to your computer,
    internet connection.
 # Used technologies
-  -I used the spoonacular API to search for meals by ingredients,
-	used asynTask to run this api
-	-ExpandableListView and RecyclerView for the lists
+  1-I used the spoonacular API to search for meals by ingredients, used asynTask to run this api
+  2-ExpandableListView and RecyclerView for the lists
