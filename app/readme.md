@@ -6,7 +6,7 @@ overview
    from the select ingredients list.
    after that a list of meals appears, you can choose any meal from this list to view its details.
    you can also choose a random meal of the day.
-   you will also be able to order the missing ingredients from the nearest market to you (still not coded).
+   you will also be able to order the missing ingredients from the nearest market to you (still not done).
 requirements
    the latest android studio installed
    java jdk 8
